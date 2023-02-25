@@ -240,6 +240,7 @@ pre {
 <section class='container'>
           <hgroup>
            <center><h1>IT Sinergy Solutions - Creando una app con OpenShift</h1></center>
+           <h2>Cloud Computing - Maestro Sergio Sentecal Guerrero - UNID</h2>
           </hgroup>
 
 
