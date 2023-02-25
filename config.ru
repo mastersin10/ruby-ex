@@ -239,27 +239,32 @@ pre {
 
 <section class='container'>
           <hgroup>
-            <h1>IT Sinergy Solutions los saluda desde OpenShift</h1>
+            <h1><center>IT Sinergy Solutions - Creación de un aplicación con OpenShift</center></h1>
+            <h2>Cloud Computing - Maestro Sergio Sentecal Guerrero - UNID</h2>
           </hgroup>
 
 
         <div class="row">
           <section class='col-xs-12 col-sm-6 col-md-6'>
             <section>
-              <h2>Deploying code changes</h2>
+              <h2>¿Qué es OpenShift?</h2>
                 <p>
-                  The source code for this application is available to be forked from the <a href="https://www.github.com/sclorg/ruby-ex">OpenShift GitHub repository</a>.
-                  You can configure a webhook in your repository to make OpenShift automatically start a build whenever you push your code:
+                OpenShift es una plataforma de contenedores de código abierto que se utiliza para desarrollar, implementar y administrar aplicaciones. Es desarrollado por Red Hat y se basa en el sistema de orquestación de contenedores de Kubernetes.
+
+                OpenShift proporciona una plataforma completa de DevOps que permite a los desarrolladores crear, probar y implementar aplicaciones de forma rápida y sencilla. Los desarrolladores pueden utilizar múltiples lenguajes de programación, marcos y herramientas para crear aplicaciones, y OpenShift se encarga de gestionar la infraestructura subyacente.
+
+                En resumen, OpenShift es una plataforma de contenedores de alta disponibilidad, escalable y segura, que permite a los desarrolladores crear y administrar aplicaciones modernas de forma eficiente y sencilla.
                 </p>
 
+<p>OpenShift ofrece una serie de ventajas para los desarrolladores y las empresas que utilizan la plataforma, entre ellas:</p>
 <ol>
-  <li>From the Web Console homepage, navigate to your project</li>
-  <li>Click on Browse &gt; Builds</li>
-  <li>From the view for your Build click on the button to copy your GitHub webhook</li>
-  <li>Navigate to your repository on GitHub and click on repository settings &gt; webhooks</li>
-  <li>Paste your webhook URL provided by OpenShift &mdash; that's it!</li>
+  <li>1. Facilidad de uso: OpenShift es fácil de usar y de implementar. Los desarrolladores pueden centrarse en el desarrollo de aplicaciones, mientras que OpenShift se encarga de la gestión de la infraestructura subyacente.</li>
+  <li>2. Flexibilidad: OpenShift es compatible con múltiples lenguajes de programación, marcos y herramientas, lo que permite a los desarrolladores utilizar las herramientas con las que están más familiarizados.</li>
+  <li>3. Escalabilidad: OpenShift permite escalar aplicaciones de forma horizontal o vertical según las necesidades de la aplicación. Esto permite a las empresas aumentar o disminuir la capacidad de sus aplicaciones según la demanda.</li>
+  <li>4. Seguridad: OpenShift proporciona una serie de características de seguridad avanzadas, como la segregación de red, el aislamiento de recursos y la autenticación, para ayudar a proteger las aplicaciones.</li>
+  <li>5. Gestión del ciclo de vida de las aplicaciones: OpenShift proporciona herramientas integradas para la gestión del ciclo de vida de las aplicaciones, la supervisión y el escalado, lo que facilita la gestión de aplicaciones en producción.</li>
+  <li>6. Plataforma de nube híbrida: OpenShift es compatible con una amplia variedad de plataformas de nube, lo que permite a las empresas utilizar la plataforma en la nube de su elección.</li>
 </ol>
-<p>After you save your webhook, if you refresh your settings page you can see the status of the ping that Github sent to OpenShift to verify it can reach the server.</p>
 <p>Note: adding a webhook requires your OpenShift server to be reachable from GitHub.</p>
 
                 <h3>Working in your local Git repository</h3>
