@@ -249,8 +249,8 @@ pre {
             <section>
               <h2>Deploying code changes</h2>
                 <p>
-                  The source code for this application is available to be forked from the <a href="https://www.github.com/sclorg/ruby-ex">OpenShift GitHub repository</a>.
-                  You can configure a webhook in your repository to make OpenShift automatically start a build whenever you push your code:
+                  OpenShift es una plataforma de contenedores de código abierto que se utiliza para desarrollar, implementar y administrar aplicaciones. Es desarrollado por Red Hat y se basa en el sistema de orquestación de contenedores de Kubernetes.
+                  OpenShift proporciona una plataforma completa de DevOps que permite a los desarrolladores crear, probar y implementar aplicaciones de forma rápida y sencilla. Los desarrolladores pueden utilizar múltiples lenguajes de programación, marcos y herramientas para crear aplicaciones, y OpenShift se encarga de gestionar la infraestructura subyacente.
                 </p>
 
 <ol>
