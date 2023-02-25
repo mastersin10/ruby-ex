@@ -239,7 +239,7 @@ pre {
 
 <section class='container'>
           <hgroup>
-            <h1>IT Sinergy Solutions - Creando una app con OpenShift</h1>
+           <center><h1>IT Sinergy Solutions - Creando una app con OpenShift</h1></center>
           </hgroup>
 
 
