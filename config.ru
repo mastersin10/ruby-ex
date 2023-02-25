@@ -33,7 +33,10 @@ map '/' do
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>Welcome to OpenShift</title>
+
+
 <style>
+
 /*!
  * Bootstrap v3.0.0
  *
@@ -43,6 +46,7 @@ map '/' do
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
+
   .logo {
     background-size: cover;
     height: 58px;
@@ -72,6 +76,7 @@ body {
   font-size: 14px;
   line-height: 1.4;
 }
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -90,8 +95,10 @@ ul {
 .container:after {
   content: " ";
   /* 1 */
+
   display: table;
   /* 2 */
+
 }
 .container:after {
   clear: both;
@@ -104,8 +111,10 @@ ul {
 .row:after {
   content: " ";
   /* 1 */
+
   display: table;
   /* 2 */
+
 }
 .row:after {
   clear: both;
@@ -119,6 +128,7 @@ ul {
 .col-xs-12 {
   width: 100%;
 }
+
 @media (min-width: 768px) {
   .container {
     width: 750px;
@@ -130,6 +140,7 @@ ul {
     width: 50%;
   }
 }
+
 @media (min-width: 992px) {
   .container {
     width: 970px;
@@ -146,6 +157,7 @@ ul {
     width: 1170px;
   }
 }
+
 a {
   color: #069;
   text-decoration: none;
@@ -219,53 +231,64 @@ pre {
   overflow: auto;
   font-family: Menlo,Monaco,"Liberation Mono",Consolas,monospace !important;
 }
+
 </style>
+
 </head>
 <body>
+
 <section class='container'>
           <hgroup>
-            <h1><center>It Sinergy Solutions - Creaando una App en OpenShift</center></h1>
-            <h2>Cloud Computing -  Maestro Sergio Sentecal Guerrero  - UNID</h2>
+            <h1><center>IT Sinergy Solutions - Creación de un aplicación con OpenShift</center></h1>
+            <h2>Cloud Computing - Maestro Sergio Sentecal Guerrero - UNID</h2>
           </hgroup>
+
+
         <div class="row">
           <section class='col-xs-12 col-sm-6 col-md-6'>
             <section>
               <h2>Deploying code changes</h2>
                 <p>
-                  OpenShift es una plataforma de contenedores de código abierto que se utiliza para desarrollar, implementar y administrar aplicaciones. 
-                  OpenShift proporciona una plataforma completa de DevOps que permite a los desarrolladores crear, probar y implementar aplicaciones de forma rápida y sencilla.
-                  Los desarrolladores pueden utilizar múltiples lenguajes de programación, marcos y herramientas para crear aplicaciones, y OpenShift se encarga de gestionar la infraestructura subyacente.
+                  The source code for this application is available to be forked from the <a href="https://www.github.com/sclorg/ruby-ex">OpenShift GitHub repository</a>.
+                  You can configure a webhook in your repository to make OpenShift automatically start a build whenever you push your code:
                 </p>
-              <p>
-                  OpenShift ofrece una serie de ventajas para los desarrolladores y las empresas que utilizan la plataforma, entre ellas:
-               </p>
+
 <ol>
-  <li>1. Facilidad de uso: OpenShift es fácil de usar y de implementar. Los desarrolladores pueden centrarse en el desarrollo de aplicaciones, mientras que OpenShift se encarga de la gestión de la infraestructura subyacente.</li>
-  <li>2. Flexibilidad: OpenShift es compatible con múltiples lenguajes de programación, marcos y herramientas, lo que permite a los desarrolladores utilizar las herramientas con las que están más familiarizados.</li>
-  <li>3. Escalabilidad: OpenShift permite escalar aplicaciones de forma horizontal o vertical según las necesidades de la aplicación. Esto permite a las empresas aumentar o disminuir la capacidad de sus aplicaciones según la demanda.</li>
-  <li>4. Seguridad: OpenShift proporciona una serie de características de seguridad avanzadas, como la segregación de red, el aislamiento de recursos y la autenticación, para ayudar a proteger las aplicaciones.</li>
-  <li>5. Gestión del ciclo de vida de las aplicaciones: OpenShift proporciona herramientas integradas para la gestión del ciclo de vida de las aplicaciones, la supervisión y el escalado, lo que facilita la gestión de aplicaciones en producción.</li>
-  <li>6. Plataforma de nube híbrida: OpenShift es compatible con una amplia variedad de plataformas de nube, lo que permite a las empresas utilizar la plataforma en la nube de su elección.</li>          
+  <li>From the Web Console homepage, navigate to your project</li>
+  <li>Click on Browse &gt; Builds</li>
+  <li>From the view for your Build click on the button to copy your GitHub webhook</li>
+  <li>Navigate to your repository on GitHub and click on repository settings &gt; webhooks</li>
+  <li>Paste your webhook URL provided by OpenShift &mdash; that's it!</li>
 </ol>
 <p>After you save your webhook, if you refresh your settings page you can see the status of the ping that Github sent to OpenShift to verify it can reach the server.</p>
 <p>Note: adding a webhook requires your OpenShift server to be reachable from GitHub.</p>
+
                 <h3>Working in your local Git repository</h3>
                 <p>If you forked the application from the OpenShift GitHub example, you'll need to manually clone the repository to your local system. Copy the application's source code Git URL and then run:</p>
+
 <pre>$ git clone &lt;git_url&gt; &lt;directory_to_create&gt;
+
 # Within your project directory
 # Commit your changes and push to OpenShift
+
 $ git commit -a -m 'Some commit message'
 $ git push</pre>
+
 <p>After pushing changes, you'll need to manually trigger a build if you did not setup a webhook as described above.</p>
       </section>
           </section>
           <section class="col-xs-12 col-sm-6 col-md-6">
+
                 <h2>Managing your application</h2>
+
                 <p>Documentation on how to manage your application from the Web Console or Command Line is available at the <a href="http://docs.okd.io/latest/dev_guide/overview.html">Developer Guide</a>.</p>
+
                 <h3>Web Console</h3>
                 <p>You can use the Web Console to view the state of your application components and launch new builds.</p>
+
                 <h3>Command Line</h3>
                 <p>With the <a href="http://docs.okd.io/latest/cli_reference/overview.html">OpenShift command line interface</a> (CLI), you can create applications and manage projects from a terminal.</p>
+
                 <h2>Development Resources</h2>
                   <ul>
                     <li><a href="http://docs.okd.io/latest/welcome/index.html">OpenShift Documentation</a></li>
@@ -275,12 +298,17 @@ $ git push</pre>
                     <li><a href="http://stackoverflow.com/questions/tagged/openshift">Stack Overflow questions for OpenShift</a></li>
                     <li><a href="http://git-scm.com/documentation">Git documentation</a></li>
                   </ul>
+
+
           </section>
         </div>
+
         <footer>
           <div class="logo"><a href="https://www.openshift.com/"></a></div>
         </footer>
 </section>
+
+
 </body>
 </html>
 WELCOME_CONTENTS
