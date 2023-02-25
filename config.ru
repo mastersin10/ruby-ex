@@ -239,8 +239,7 @@ pre {
 
 <section class='container'>
           <hgroup>
-            <h1><center>IT Sinergy Solutions - Creación de un aplicación con OpenShift</center></h1>
-            <h2>Cloud Computing - Maestro Sergio Sentecal Guerrero - UNID</h2>
+            <h1>IT Sinergy Solutions - Creación de un aplicación con OpenShift</h1>
           </hgroup>
 
 
